@@ -106,7 +106,7 @@ ESX.RegisterServerCallback("EWine:fix", function(source, cb, fixItem)
 		    			timeout = 3000,
 		    			layout = "centerLeft"	
 				})
-	end
+        end
 	elseif fixItem == "breaker" then
 		Breaker = true;
 		TriggerClientEvent("EWine:updateData", -1 , fixItem, true)
@@ -212,22 +212,6 @@ ESX.RegisterServerCallback("EWine:fix", function(source, cb, fixItem)
 	cb(true)
 	end
 	--]]
-	cb(true)
-end)
-ESX.RegisterServerCallback("EWine:getProductCrack", function(source, cb)
-    	local _source = source	
-	local xPlayer = ESX.GetPlayerFromId(_source)
-	
-	
-	xPlayer.addInventoryItem("crack_pooch", 1)
-	cb(true)
-end)
-ESX.RegisterServerCallback("EWine:getProductCoke", function(source, cb)
-    	local _source = source	
-	local xPlayer = ESX.GetPlayerFromId(_source)
-	
-	
-	xPlayer.addInventoryItem("coke_pooch", 1)
 	cb(true)
 end)
 
