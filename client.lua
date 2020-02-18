@@ -50,17 +50,9 @@ Citizen.CreateThread( function()
     Citizen.Wait(1000)
         if GetDistanceBetweenCoords(Config.PickupBlip.x,Config.PickupBlip.y,Config.PickupBlip.z, GetEntityCoords(GetPlayerPed(-1))) <= 200 then
             if spawned == false then
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
-                TriggerEvent('EWine:start')
+		for i=0,10,+1 do 
+			TriggerEvent('EWine:start') 
+		end
             end
             spawned = true
         else
